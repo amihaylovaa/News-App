@@ -11,4 +11,14 @@ public class KafkaTopicConfiguration {
     public NewTopic logTopic() {
         return new NewTopic("logs", 1, (short) 1);
     }
+
+    @Bean
+    public NewTopic categoryTopic() {
+        return new NewTopic("category", 1, (short) 1);
+    }
+
+    @Bean
+    public NewTopic preferenceTopic() {
+        return new NewTopic("preference", 1, (short) 1);
+    }
 }
